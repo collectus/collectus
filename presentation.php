@@ -259,7 +259,7 @@ include('include/connexion.php');
 						<br><br>
 					    <strong>Comment ça marche ?  </strong>
 						<br><br>	
-					Effectuez votre inventaire <a class="bd" href="devis.html" target="_blank">en ligne </a>  ou contactez nous au <a class="bd">01.79.72.33.38</a> pour un audit personnalisé.				
+					Effectuez votre inventaire <a class="bd2" href="devis.html" target="_blank">en ligne </a>  ou contactez nous au <a class="bd2">01.79.72.33.38</a> pour un audit personnalisé.				
 						Nous sommes votre unique interlocuteur pour prendre en charge votre problématique.
 						Toutes les opérations sont éffectuées en cercle fermé par nos agents afin d\'assurer confidentialité et traçabilité.
 						Nous définissons ensemble la date de collecte selon vos convenances et contraintes.
