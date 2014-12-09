@@ -1,0 +1,509 @@
+@charset "utf-8";
+
+/** Formulaire de connexion **/
+
+#fconnexion
+{
+	margin-right:10px;
+	float:right;
+	display:inline;
+	font-size: 13px;
+	text-align:center;
+	margin-top:0px;
+	height: 50px;
+}
+#formulaireaccueil
+{
+	margin-right:15px;
+	float:right;
+	display:inline;
+	margin-top:0px;
+	
+}
+#formulairelanding
+{
+	position: absolute;
+	margin-right:0px;
+	margin-left:28px;
+	display:inline;
+	margin-top:185px;
+	
+}
+#fconnexion td{
+	padding:1px 1px;
+	text-align:right;
+}
+#registrera, #logina{
+	/*text-transform:uppercase;*/
+	color: rgb(100,100,100);
+	width:150px;
+	height:30px;
+	padding: 3px 10px;
+}
+
+#fconnexion a:hover{
+	text-decoration:underline;
+}
+ 
+#registrer{
+	background-color:white;
+	border-top-left-radius:1px;
+	border-top-right-radius:1px;
+	width:100px;
+}
+
+#login{
+	background-color:white;
+	border-bottom-left-radius:1px;
+	border-bottom-right-radius:1px;
+	margin-top:5px;
+}
+
+#logged{
+font-size:14px;
+margin: 5px -10px 0 0;
+text-align:right;
+height:50px;
+}
+#logged span#connected{
+background-color:rgb(100,154,60);
+color:white;
+padding:2px 15px;
+border-radius:2px;
+}
+#logged span#membre_logged{
+text-decoration:underline;
+display:block;
+padding-top:5px;
+padding-bottom:10px;
+font-weight:normal;
+color:red;
+}
+#logged span#logout a{
+font-size:12px;
+color:#999;
+}
+
+/* Formulaire de connexion */
+
+#sign_up {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	//border-radius:6px;
+	//border: 1px solid #536376;
+	//-webkit-box-shadow: rgba(0,0,0,.6) 0px 2px 12px;
+	//-moz-box-shadow:  rgba(0,0,0,.6) 0px 2px 12px;
+	//box-shadow:rgba(0,0,0,.6) 0px 2px 12px;
+	//padding: 14px 22px;
+	margin-left:20px;
+	width: 280px;
+	position: relative;
+	display: block;
+}
+
+#sign_up label {
+	display: block;
+	margin-bottom: 10px; 
+	color: #536376;
+}
+
+#sign_up label input {
+	display: block;
+	width: 260px;
+	height: 20px;
+	padding: 2px 5px;
+}
+#see_id {
+	font-size:18px;
+	text-decoration:underline;
+	margin-bottom:20px;
+}
+#left_out{
+margin-top:10px;
+}
+#left_out a{
+color:rgb(120,120,120);
+font-weight:bold;
+}
+#sign_up_form {
+	position: relative;
+	padding-bottom: 60px;
+	margin-top: 12px;
+}
+#sign_up_form input[type=submit]{
+	width:100px;
+	font-size:14px;
+	padding:1px 2px;
+	background-color:rgb(84,136,199);
+	border-radius:8px;
+	float:right;
+	margin-top:10px;
+	margin-right:3px;
+	color:white;
+	border:0;
+	box-shadow:2px 2px 3px rgb(12,60,108);
+}
+#sign_up_form input[type=text]:focus,#sign_up_form input[type=password]:focus{
+background-color:rgb(231,244,249);
+border:1px solid rgb(184,184,184);
+}
+/** Formulaire d'inscription **/
+
+#inscri_title{
+font-size:26px;
+margin-left:15px;
+margin-bottom:30px;
+color:rgb(12,60,108);
+}
+#inscription img#inscri_img{
+float:right;
+margin-top:20px;
+margin-right:30px;
+}
+#inscription{
+display:block;
+}
+#inscription fieldset{
+border-top:1px dotted grey;
+}
+#inscription fieldset legend{
+margin-left:20px;
+font-size:15px;
+padding:0 8px;
+line-height:20px;
+background-color:white;
+}
+#inscription fieldset legend img{
+margin-right:3px;
+}
+#inscription table{
+margin:10px 0;
+width:430px;
+}
+#inscription fieldset td{
+padding:5px 0;
+}
+#inscription fieldset#inscri_field2 td{
+padding:8px 0;
+}
+#inscription fieldset table td.label{
+width:40%;
+}
+#inscription label{
+margin-right:5px;
+font-size:14px;
+}
+#inscription input[type=text],#inscription input[type=password]{
+border:1px solid rgb(184,184,184);
+padding:2px;
+font-size:12px;
+color:rgb(105,102,105);
+width:250px;
+height:20px;
+}
+#inscription input[type=text]:focus,#inscription input[type=password]:focus{
+background-color:rgb(231,244,249);
+}
+#inscription td#inscri_ok{
+text-align:right;
+}
+#inscription input[type=submit]{
+font-size:14px;
+padding:2px 15px;
+background-color:rgb(84,136,199);
+border-radius:7px;
+margin-right:5px;
+color:white;
+border:0;
+box-shadow:2px 2px 3px rgb(12,60,108);
+}
+#error_msg,#registrer_msg{
+font-size:13px;
+color:red;
+margin-top:15px;
+}
+
+/** Formulaire collecte **/
+
+#formulaire{
+	width: 230px;
+	height:380px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+#souscontact{
+	width: 200px;
+	margin-left: 40px;
+	margin-top: 250px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+#finscription
+{	
+	display:inline-block;
+	height:auto;
+	padding: 12px;
+	padding-bottom:15px;
+	padding-left: 17px;
+	float:left;
+	border-radius: 1px;
+    -moz-border-radius: 10px;
+	box-shadow: 2px 2px 3px rgb(12,60,108);
+	border: 1px solid rgb(192,192,192);
+	width: 200px;
+	margin-bottom:20px;
+}
+
+#infobulle{
+	display: none;
+	width: 250px;
+	z-index: 1000;
+	position: absolute;
+	margin-left: 2px;
+	margin-top: 8px;
+	border-radius: 3px;
+	padding: 5px;
+	background-color: rgb(34,55,91);
+	color: white;
+}
+
+#finscription img{
+	margin-left: 10px;
+	margin-bottom: -3px;
+	width: 8%;
+}
+
+#contacter {
+	/*text-transform: uppercase;*/
+	border-bottom: 0px solid rgb(142,177,221);
+	color: rgb(12,60,108);
+	margin-left: 4px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#contacter2 {
+	/*text-transform: uppercase;*/
+	font-family: 'Century Gothic';
+	display: block;
+	border-bottom: 0px solid rgb(142,177,221);
+	color: rgb(12,60,108);
+	text-align:left;
+	margin-left: 4px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#contacter3 {
+	/*text-transform: uppercase;*/
+	display: block;
+	font-family: 'Century Gothic';
+	color: rgb(236,66,47);
+	/*color: rgb(39,174,96);*/
+	padding-bottom:0px;
+	text-align:left;
+	margin-left: 4px;
+	font-size: 24px;
+	font-weight: bold;
+}
+#finscription table{
+	margin-top : 5px;
+	padding: 4px 2px;
+	width: 190px;
+}
+
+#finscription td{
+	padding: 2px 2px;
+	padding-top: 5px;
+	width:50%;
+}
+
+#finscription label{
+	font-size: 13px;
+	color: rgb(12,60,108);
+	padding-left: 4px;
+	border-bottom: 1px dotted;
+}
+
+#finscription input[type=text],#finscription input[type=tel],#finscription input[type=mail]
+{
+	color: rgb(110,110,110);
+	border-radius: 3px;
+	height: 14px;
+	padding: 2px 0;
+	font-size:12px;
+}
+
+#finscription input[type=text],#finscription input[type=mail]{
+	width: 100%;
+}
+
+#finscription input[type=submit]
+{
+	width: 50px;
+	float: right;
+	color: white;
+	background-color: rgb(200,200,200);
+	padding: 0 10px;
+	border-radius: 3px;
+	font-family: myfont, Arial, sans-serif;
+	margin-bottom:-6px;
+}
+
+#finscription input[type=tel]{
+ width:100%;
+ }
+
+#finscription input[type=checkbox]{
+	color: rgb(50,101,164);
+	margin-left: 2px;
+}
+
+
+#finscription2
+{	
+	display:inline-block;
+	height:auto;
+	padding: 12px;
+	padding-bottom:15px;
+	padding-left: 17px;
+	float:left;
+	border-radius: 1px;
+    -moz-border-radius: 10px;
+	box-shadow: 2px 2px 3px rgb(12,60,108);
+	border: 1px solid rgb(192,192,192);
+	width: 190px;
+	margin-bottom:20px;
+	margin-left:30px;
+	}
+
+
+
+
+
+
+#demande_collecte{
+display:inline-block;
+text-align:center;
+width:230px;
+margin-top:0px;
+padding:8px 0px;
+border-radius:4px;
+margin-left:2px;
+background-color:rgb(12,60,108);
+color:white;
+font-weight:bold;
+}
+#demande_formule{
+text-align:center;
+padding:5px 20px;
+border-radius:7px;
+margin-left:2px;
+background-color:green;
+color:white;
+font-weight:bold;
+}
+
+#savoir_plus_1{
+display:inline-block;
+text-align:center;
+padding:8px 0px;
+width: 225px;
+margin-top:-6px;
+margin-bottom:-7px;
+border-radius:1px;
+margin-right:2px;
+background-color:rgb(220,220,220);
+color:rgb(80,80,80);
+
+
+
+}
+#savoir_plus_2{
+display:inline-block;
+text-align:center;
+padding:8px 0px;
+width: 225px;
+margin-top:-6px;
+margin-bottom:-7px;
+border-radius:1px;
+margin-right:2px;
+background-color:rgb(220,220,220);
+color:rgb(80,80,80);
+
+}
+#savoir_plus_3{
+display:inline-block;
+text-align:center;
+padding:8px 0px;
+width: 225px;
+margin-top:-6px;
+margin-bottom:-7px;
+border-radius:1px;
+margin-right:2px;
+background-color:rgb(220,220,220);
+color:rgb(80,80,80);
+
+}
+#formula{
+text-align:center;
+padding:4px 15px;
+border-radius:12px;
+margin-left:25px;
+background-color:green;
+color:white;
+font-weight:bold;
+}
+
+/** Formulaire de demande de collecte **/
+
+#demande form{
+	margin-top: 10px;
+}
+
+#demande legend{
+	margin-left: 10px;
+	text-align: center;
+	display: block;
+	padding: 0 3px;
+	color: rgb(12,60,108);
+	font-weight:bold;
+}
+
+#coord input[type=text]{
+	width: 200px;
+	float:right;
+	height:19px;
+}
+
+#demande input.qte{width:25px;}
+#remfield{padding-right:10px;}
+#addfield{display:block;padding:5px 5px;}
+#field3 input[type=submit]{
+	width: 100px;
+	margin-left: 45%;
+	color: white;
+	margin-top:20px;
+	background-color: rgb(12,60,108);
+	box-shadow:2px 2px 0px rgb(182,205,233);
+	padding: 3px 10px;
+	border-radius: 8px;
+}
+
+.selectinventaire{margin-bottom:5px;}
+
+#demande label{
+	margin:0 6px;
+}
+
+#demande td{
+	padding: 2px 0;
+}
+
+#demande fieldset{
+	margin: 8px 0 0 0;
+	padding: 15px 5px;
+	border-top: 1px dashed rgb(200,200,200);
+}

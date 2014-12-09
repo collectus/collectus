@@ -1,0 +1,6 @@
+<Files list_files.php>
+AuthName "Page d'administration protégée"
+AuthType Basic 
+AuthUserFile C:\wamp\www\test\.htpasswd
+Require valid-user
+</Files>

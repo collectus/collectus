@@ -1,0 +1,388 @@
+@charset "UTF-8";
+@import url("../css/form.css");
+@import url("../css/hmenu.css");
+@import url("../css/imenu.css");
+
+@font-face {
+    font-family: 'myfont';
+    src: url('../font/eb-webfont-webfont.eot');
+    src: url('../font/eb-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/eb-webfont-webfont.woff') format('woff'),
+         url('../font/eb-webfont-webfont.ttf') format('truetype'),
+         url('../font/eb-webfont-webfont.svg#myfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+* RESET CODE
+*/
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+* MISE EN PAGE
+*/
+
+body {
+	text-align:center;
+	font-family:myfont, "Century Gothic", Helvetica, Arial, sans-serif;
+	font-size:0.9em;
+	min-height:950px;
+	background-image:linear-gradient(white,rgb(219,219,219));
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+}
+
+#headpage{
+	width: 100%;
+	border: 0px none;
+	clear: both;
+	height: 28px;
+	background-color: rgb(12,60,108);
+	font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+}
+
+#headpage span{
+	margin-top: 4px;
+	margin-left: 10px;
+	float: left;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+a
+{
+	color:#999;
+	text-decoration:none;	
+}
+
+#conteneur
+{
+	width:1000px;
+	height: auto;
+	background-color:#FFFFFF;
+	margin:0 auto;	
+	text-align:left;
+	overflow:hidden;
+	border-radius: 20px;
+    -moz-border-radius: 30px;
+	position: relative;
+	z-index: 1;
+}
+
+#head
+{
+	position: relative;
+	width:auto;
+	background-color:#FFFFFF;
+	display:block;
+	margin-top: 7px;
+	margin-bottom: 9px;
+}
+
+#langage{
+	position: absolute;
+	display:inline-block;
+	margin-left: -220px;
+	top: 122px;
+}
+
+#langage a{
+	position: relative;
+	z-index:100;
+}
+
+#langage td{
+	padding:0 10px;
+}
+
+#imagesociete
+{
+	margin-top: 15px;
+	margin-left: 30px;
+	float:left;
+	display:inline-block;
+}
+
+#slogan
+{
+	position: absolute;
+	left: 35px;
+	z-index:50;
+	display: inline-block;
+	font-style: italic;
+	margin-top: 80px;
+	font-family: "Berlin sans FB", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: rgb(10,60,108);
+}
+
+#slogan span
+{
+	margin-left: 60px;
+}
+
+#icone
+{
+	width: 490px;
+	margin-left: 340px;
+}
+
+#icone td
+{
+	padding: 10px 40px;
+}
+
+#cart, #tele, #elec, #gobe, #cane, #pile {
+	display: none;
+	position: absolute;
+	top:-7px;
+	font-weight: bold;
+	color: rgb(10,60,108);
+}
+
+#tele{margin-left: -14px;}
+#elec{margin-left: 14px;}
+#pile{margin-left: 0px;}
+#contenu
+{
+	display:block;
+	background-color:#FFFFFF;
+}
+
+#center
+{
+	position: relative;
+	width:670px;
+	min-height: 350px;
+	height:auto;
+	margin: 28px 15px 25px 0;
+	padding: 0 10px 0 20px;
+	background-color:#FFFFFF;
+	color: rgb(51, 51, 51);
+	font-size: 13px;
+	float: right;
+	display:inline-block;
+	border-left: 2px dotted rgb(171,196,203);
+}
+
+#formulaire{
+position:absolute;
+}
+#chemin{
+	display: block;
+	height: 25px;
+}
+
+#chemin, #chemin a{
+	color: rgb(115,105,92);
+}
+
+h2{
+	font-size: 35px;
+	font-weight: bold;
+	color:rgb(12,60,108);
+	display: inline-block;
+	margin-top: 4px;
+}
+
+#text {
+	text-align: justify;
+	margin-top: 15px;
+}
+
+#option{text-align:justify;}
+
+#option th{
+	text-align: center;
+	padding-bottom:5px;
+	font-size: 18px;
+}
+
+#option td{
+	padding:2px 5px;
+}
+
+#picto1 {
+	width:21%;
+}
+#picto2 {
+	width: 16%;
+}
+#picto3 {
+	width:13%;
+}
+#picto4 {
+	width:10%;
+}
+#picto5 {
+	width:8%;
+}
+#picto6 {
+	width:21%;
+}
+#picto7 {
+	width: 19%;
+	padding:0 10px;
+}
+#picto8 {
+	width:14%;
+	padding-right:10px;
+}
+#picto9 {
+	width:10%;
+}
+
+#onglets{
+	text-align:justify;
+}
+
+/** Zone en bas de page **/
+
+#social{
+	position: absolute;
+	font-weight: bold;
+	display: inline;
+	bottom: 80px;
+	left: 150px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+}
+
+#social img{
+	vertical-align: -5px;
+	padding: 0px 5px;
+}
+
+#contact
+{
+	position: relative;
+	background: url('../images/bottom4.png') no-repeat bottom left #FFFFFF;
+	background-size: 100% 220px;
+	display: inline-block;
+	height: 220px;
+	width: 1000px;
+	bottom: 0;
+}
+
+#telethon{
+	display: inline-block;
+	position: absolute;
+	bottom: 22px;
+	left: 63px;
+	width: 150px;
+}
+
+#telethon span{
+	font-size: 16px;
+	color: black;
+	margin-bottom: 5px;
+	margin-left: 0px;
+}
+
+#contact table{
+	display: inline-block;
+	font-size: 14px;
+	position: absolute;
+	bottom: 16px;
+	right: 155px;
+	color: white;
+}
+
+#contact th{
+	height: 22px;
+	padding-right: 50px;
+}
+
+#contact td
+{
+	padding: 2px 40px 0 0;
+}
+
+.service{
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: rgb(12,60,108);
+}
+
+/** Pied de page **/
+
+#footer
+{
+	position: relative;
+	margin:0 auto;
+	margin-top: -50px;
+	z-index: 0;
+	padding-top: 50px;
+	padding-bottom:20px;
+	height:60px;
+	width:100%;
+	border: 0 none;
+	//background-color: rgb(12,60,108);
+	text-align:center;
+}
+
+/** Modification langue **/
+
+.menu :hover ul.sub1 {
+left:-0px;
+}
+
+.menu :hover ul.sub2 {
+left:-320px;
+}
+.menu li.top-li{
+padding: 0 -15px;
+}
+
+#infobulle{
+	margin-left:200px;
+	margin-top:-70px;
+}

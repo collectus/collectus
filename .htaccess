@@ -1,0 +1,36 @@
+Options +FollowSymlinks
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^collectus.fr$
+RewriteRule ^(.*) http://www.collectus.fr/$1 [QSA,R=301]
+RewriteRule ^index.html$ index.php [L]
+RewriteRule ^demande.html$ demande.php [L]
+RewriteRule ^deconnexion.html$ deconnexion.php [L]
+RewriteRule ^devis.html$ devis.php [L]
+RewriteRule ^envoi.html$ envoi.php [L]
+RewriteRule ^espace.html$ espace.php [L]
+RewriteRule ^inscription.html$ inscription.php [L]
+RewriteRule ^recycle-([a-z]*)-([a-z]*).html$ recycle.php?menu=$1&page=$2 [L]
+RewriteRule ^service-([a-z]*)-([a-z]*).html$ service.php?menu=$1&page=$2 [L]
+RewriteRule ^service-([a-z]*).html$ service.php?menu=$1 [L]
+RewriteRule ^presentation-([a-z]*)-([a-z]*).html$ presentation.php?menu=$1&page=$2 [L]
+RewriteRule ^presentation-([a-z]*).html$ presentation.php?menu=$1 [L]
+RewriteRule ^prestation-([a-z]*)-([a-z]*).html$ prestation.php?menu=$1&page=$2 [L]
+RewriteRule ^prestation-([a-z]*).html$ prestation.php?menu=$1 [L]
+RewriteRule ^espace-([a-z]*).html$ espace.php?page=$1 [L]
+RewriteRule ^espace-([a-z]*)-([0-9]+).html$ espace.php?page=$1&id=$2 [L]
+RewriteRule ^espace-([a-z]*)-([a-z]*).html$ espace.php?page=$1&id=$2 [L]
+RewriteRule ^onglet-([a-z]*).html$ onglet.php?page=$1 [L]
+RewriteRule ^footer-([a-z]*).html$ footer.php?opt=$1 [L]
+
+AddType video/ogg  .ogv
+AddType video/mp4  .mp4
+AddType video/webm .webm
+
+<Files admin.php>
+AuthName "Page d'administration protégée"
+AuthType Basic 
+AuthUserFile C:\wamp\www\collectus2\.htpasswd
+Require valid-user
+</Files>
